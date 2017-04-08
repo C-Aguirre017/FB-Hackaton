@@ -6,16 +6,14 @@
 import React, { Component } from 'react'
 import ShareExtension from 'react-native-share-extension'
 import Spinner from 'react-native-spinkit';
-import RNFS from 'react-native-fs';
 
 import {
-  AppRegistry,
-  StyleSheet,
   Text,
   View,
   ScrollView,
   Image,
-  Modal
+  Modal,
+  BackAndroid
 } from 'react-native';
 
 export default class Share extends Component {
@@ -87,7 +85,7 @@ export default class Share extends Component {
       </View>
     }
     return (
-      <Modal open={true} style={{flex: 1, alignItems: 'center'}} transparent={true} onRequestClose={() => {}}>
+      <Modal open={true} style={{flex: 1, alignItems: 'center'}} transparent={true} onRequestClose={() => { BackAndroid.exitApp(); }}>
 	      <View>
 	        <View style={{ borderColor: 'green', borderWidth: 0, backgroundColor: 'white', margin: 10, borderRadius: 2, padding: 5, flexDirection: 'column'}}>
 	          <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
