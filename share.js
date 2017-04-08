@@ -23,29 +23,26 @@ export default class Share extends Component {
     super(props, context)
     this.state = {
       isOpen: true,
-      type: '',
-      value: ''
+      isLoading: true,
+      result: ''
     }
     this.send = this.send.bind(this)
   }
 
   send(file_path) {
     RNFS.readFile(file_path, 'base64').then((content) => {
-      console.dir(content)
+      this.setState({
+        isLoading: false,
+        result: 'hola'
+      })
     })
     return "aaa";
   }
 
   async componentDidMount() {
     try {
-      console.dir(await ShareExtension.data())
       const { type, value } = await ShareExtension.data()
-      console.dir(type)
-      console.dir(value)
-      this.setState({
-        type,
-        value
-      })
+      this.send(value)
     } catch(e) {
       console.log('errrr', e)
     }
@@ -62,8 +59,22 @@ export default class Share extends Component {
   }
 
   render() {
+    content = ''
+    if(this.state.isLoading) {
+      content = <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
+        <Spinner isVisible={true} size={100} type={'Wave'} color={'#77B3D4'}/>
+      </View>
+    } else {
+      content = <View>
+        <Text style={{fontSize: 20, fontWeight: 'bold', color: '#77B3D4'}}>Texto</Text>
+        <ScrollView>
+          <Text style={{fontSize: 20, color: '#333333', textAlign: 'justify'}}>{ this.state.value }</Text>
+          <Text style={{fontSize: 20, color: '#333333', textAlign: 'justify'}}>{ this.state.result }</Text>
+        </ScrollView>
+      </View>
+    }
     return (
-      <Modal open={true} style={{flex: 1, alignItems: 'center'}} transparent={true}>
+      <Modal open={true} style={{flex: 1, alignItems: 'center'}} transparent={true} onRequestClose={() => {}}>
 	      <View>
 	        <View style={{ borderColor: 'green', borderWidth: 1, backgroundColor: 'white', margin: 10, borderRadius: 2, padding: 5, flexDirection: 'column'}}>
 	          <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
@@ -73,16 +84,7 @@ export default class Share extends Component {
 	            />
 	            <Text style={{marginLeft: 10, fontSize: 30, fontWeight: 'bold', color: '#77B3D4'}}>PAPIRO</Text>
 	          </View>
-	          <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
-	            <Spinner isVisible={true} size={100} type={'Wave'} color={'#77B3D4'}/>
-	          </View>
-	          <View>
-	            <Text style={{fontSize: 20, fontWeight: 'bold', color: '#77B3D4'}}>Texto</Text>
-	            <ScrollView>
-                <Text style={{fontSize: 20, color: '#333333', textAlign: 'justify'}}>{ this.state.value }</Text>
-	              <Text style={{fontSize: 20, color: '#333333', textAlign: 'justify'}}>{ this.send(this.state.value) }</Text>
-	            </ScrollView>
-	          </View>
+            {content}
 	        </View>
 	      </View>
       </Modal>
