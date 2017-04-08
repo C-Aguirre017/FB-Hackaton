@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "fb-hackathon-164016",
+  "private_key_id": "a59e2f4f7fb16a45a5d6eca69bde21d63ce202ef",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCvJA1D0RDdeRg1\nVa+OljtrKAOYvN4vDNDxi6xXu00q/pyvnXvUkbZoFs0W3ScI2+VdbXI+cv0MGN23\nRxWQKNQ+1EcsElE6NjAG1LPz3xzf8sMlWzXKeR+7hqjcn/Jvj3jjdzUq++kpQu6j\nIgwMVGYk02ERW7cKhHBfeoRLDy09z76UBJcUjoHWcuEAIeywjZ8csqHOQafGlfIH\ndocbDPIx6W2cbF0NqkiM75YuEOtF1R6bwEdvL0yNRr7aTGZXw1UO2TRXAtdjbeap\nIzXz/1TJnJfeQIsIVNBFqDQUtmvT6AP9EyYNK+bXxiMB4wHUscHlgcssQSUo6TC4\nHaSsQgO1AgMBAAECggEBAJuyTAyOzhRlM40ueFwk1/vB3bippkdjeFhTF8oCW26u\nXHKOaOgnBWZxZq89uRbaDYRJ6Lb1mFlpvajSC6xVb6HPKtpWClnalEVuT++r18qK\n0Mrj0+UEWp5l7rX7hxWAETL95Ykp2zRwKR9jBBzt5sQ0GeXJh+ZUqGVo0DS98DUy\ngerdbSQghSe6IKK4ZwlCm5PjwWZUkRpI6Z1bVklHtzGhSMd4vGwE3a9+FFdWDkkm\nALdx+mFZEAM4/HEpNJAzwELeiSgzXjz6953WbFLCbghSW880Uc5zeqVNJFBQoaCe\nSoO5NMpEpJQKqA8OH7p/K4PViFgT0zxFi4HmZpYbw90CgYEA3H4H2BSgLWL38M7n\nmatufzDYgxyC3+M7LzmUqhJdNc37WpOJAfSw6Gd2iVBouPgfJjx0gLOMGQi+Nil8\nA+XAFzqzjzIEGx8f7Cpyk17FkOgAlbzpLLp0qCskH48uo2HyHThpFQf+JKcpOPMx\nPFTESOJLLq7xhQ/TnKowmTY0E38CgYEAy1he4dHldQXbYqldVABYyuLTQ5Ks3m85\nk+fZ5OxB1KFxtEdcKl5ze3eBfw0p1b4c7DUngAKAl6Sa9ITv1pGYcn0BeBFCW4JL\nZqZwKBKLT2+7dcvDRbP9yzynbWbegg1GvfX9CVifqThWK40xbFDivPGvdHCRUIoY\nVZiJJQO4cssCgYBMsCD2TKYxYvytaqkuz2tNHaYQY/g4+oV5NWO5i02UCyJjLHE4\nlux4yJN3ytnBi7r5x4kVwlz10A6oM+GIUX5wFeCh61l2PWsS7uiOzSWV8rtRWTUY\nc3ljjC2yNFCaTtSwyQ/zWqZQBTvXLO5w92KVnu9bO0mRaCHHmYHxp+KQ7QKBgQC8\nEs0XIfKPTM5/r1QBqJx3clmiKxw2Uzs24H8464drqbKn4kSNb3RyIrMkFsG1zrOj\niPoyvJ3BI96p//ZwR5NveM0OBzCPwLAKjjA38Abnftksdzzx0CsRedUFK9rrAGqI\nsebKaSyq789LUrj+jMVZqlP0Z1UP39nn+UAHeyxzBwKBgDEvLp05jMOo2wTPT7Sc\nUgKJdIhF96iBoT6W9W6o3ZgAWPoVUYmFudfkFmocrjliXIiK3jXgDTDGWaVsyiiJ\nIe0N7mpQpbjfb2ZZNaQTgfPGxCbzvXhmm/iHS7Qf/OBMYbnqgVGT8kEo3EzA+y3X\nVFdAU9Y+AsCzO28tSGN8Vf5k\n-----END PRIVATE KEY-----\n",
+  "client_email": "papiro-speech@fb-hackathon-164016.iam.gserviceaccount.com",
+  "client_id": "111877603226768289607",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/papiro-speech%40fb-hackathon-164016.iam.gserviceaccount.com"
+}
