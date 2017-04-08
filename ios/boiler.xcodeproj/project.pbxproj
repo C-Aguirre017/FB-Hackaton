@@ -34,6 +34,35 @@
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* boilerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* boilerTests.m */; };
+		413F4A541E994E6E006114D4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413F4A521E994E6E006114D4 /* MainInterface.storyboard */; };
+		413F4A581E994E6E006114D4 /* MyShareEx.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 413F4A4D1E994E6E006114D4 /* MyShareEx.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		413F4A771E994EA5006114D4 /* MyShareEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 413F4A761E994EA5006114D4 /* MyShareEx.m */; };
+		413F4A7E1E9950FB006114D4 /* libcxxreact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA91DF850E9000B6D8A /* libcxxreact.a */; };
+		413F4A7F1E9950FB006114D4 /* libcxxreact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EAB1DF850E9000B6D8A /* libcxxreact.a */; };
+		413F4A801E9950FB006114D4 /* libjschelpers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EAD1DF850E9000B6D8A /* libjschelpers.a */; };
+		413F4A811E9950FB006114D4 /* libjschelpers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EAF1DF850E9000B6D8A /* libjschelpers.a */; };
+		413F4A821E9950FB006114D4 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
+		413F4A831E9950FB006114D4 /* libRCTAnimation-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157351DD0AC6500FF2AA8 /* libRCTAnimation-tvOS.a */; };
+		413F4A841E9950FB006114D4 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		413F4A851E9950FB006114D4 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
+		413F4A861E9950FB006114D4 /* libRCTImage-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */; };
+		413F4A871E9950FB006114D4 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
+		413F4A881E9950FB006114D4 /* libRCTLinking-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E881DF850E9000B6D8A /* libRCTLinking-tvOS.a */; };
+		413F4A891E9950FB006114D4 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
+		413F4A8A1E9950FB006114D4 /* libRCTNetwork-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E8C1DF850E9000B6D8A /* libRCTNetwork-tvOS.a */; };
+		413F4A8B1E9950FB006114D4 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
+		413F4A8C1E9950FB006114D4 /* libRCTSettings-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E901DF850E9000B6D8A /* libRCTSettings-tvOS.a */; };
+		413F4A8D1E9950FB006114D4 /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
+		413F4A8E1E9950FB006114D4 /* libRCTText-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E941DF850E9000B6D8A /* libRCTText-tvOS.a */; };
+		413F4A8F1E9950FB006114D4 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		413F4A901E9950FB006114D4 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
+		413F4A911E9950FB006114D4 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
+		413F4A921E9950FB006114D4 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
+		413F4A931E9950FB006114D4 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		413F4A941E9950FB006114D4 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
+		413F4A951E9950FB006114D4 /* libReactNativeShareExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 413F4A7D1E994F22006114D4 /* libReactNativeShareExtension.a */; };
+		413F4A961E9950FB006114D4 /* libyoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA51DF850E9000B6D8A /* libyoga.a */; };
+		413F4A971E9950FB006114D4 /* libyoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA71DF850E9000B6D8A /* libyoga.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 /* End PBXBuildFile section */
@@ -200,6 +229,20 @@
 			remoteGlobalIDString = 3D3CD9181DE5FBD800167DC4;
 			remoteInfo = "jschelpers-tvOS";
 		};
+		413F4A561E994E6E006114D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 413F4A4C1E994E6E006114D4;
+			remoteInfo = MyShareEx;
+		};
+		413F4A7C1E994F22006114D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 413F4A781E994F22006114D4 /* ReactNativeShareExtension.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 41B5DE301D0B505800949BD5;
+			remoteInfo = ReactNativeShareExtension;
+		};
 		5E9157321DD0AC6500FF2AA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */;
@@ -230,6 +273,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		413F4A751E994E6E006114D4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				413F4A581E994E6E006114D4 /* MyShareEx.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
@@ -252,6 +309,11 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* boiler-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "boiler-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* boiler-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "boiler-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		413F4A4D1E994E6E006114D4 /* MyShareEx.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyShareEx.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		413F4A531E994E6E006114D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		413F4A551E994E6E006114D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		413F4A761E994EA5006114D4 /* MyShareEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyShareEx.m; sourceTree = "<group>"; };
+		413F4A781E994F22006114D4 /* ReactNativeShareExtension.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeShareExtension.xcodeproj; path = "../node_modules/react-native-share-extension/ios/ReactNativeShareExtension.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
@@ -303,6 +365,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413F4A4A1E994E6E006114D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				413F4A7E1E9950FB006114D4 /* libcxxreact.a in Frameworks */,
+				413F4A7F1E9950FB006114D4 /* libcxxreact.a in Frameworks */,
+				413F4A801E9950FB006114D4 /* libjschelpers.a in Frameworks */,
+				413F4A811E9950FB006114D4 /* libjschelpers.a in Frameworks */,
+				413F4A821E9950FB006114D4 /* libRCTActionSheet.a in Frameworks */,
+				413F4A831E9950FB006114D4 /* libRCTAnimation-tvOS.a in Frameworks */,
+				413F4A841E9950FB006114D4 /* libRCTAnimation.a in Frameworks */,
+				413F4A851E9950FB006114D4 /* libRCTGeolocation.a in Frameworks */,
+				413F4A861E9950FB006114D4 /* libRCTImage-tvOS.a in Frameworks */,
+				413F4A871E9950FB006114D4 /* libRCTImage.a in Frameworks */,
+				413F4A881E9950FB006114D4 /* libRCTLinking-tvOS.a in Frameworks */,
+				413F4A891E9950FB006114D4 /* libRCTLinking.a in Frameworks */,
+				413F4A8A1E9950FB006114D4 /* libRCTNetwork-tvOS.a in Frameworks */,
+				413F4A8B1E9950FB006114D4 /* libRCTNetwork.a in Frameworks */,
+				413F4A8C1E9950FB006114D4 /* libRCTSettings-tvOS.a in Frameworks */,
+				413F4A8D1E9950FB006114D4 /* libRCTSettings.a in Frameworks */,
+				413F4A8E1E9950FB006114D4 /* libRCTText-tvOS.a in Frameworks */,
+				413F4A8F1E9950FB006114D4 /* libRCTText.a in Frameworks */,
+				413F4A901E9950FB006114D4 /* libRCTVibration.a in Frameworks */,
+				413F4A911E9950FB006114D4 /* libRCTWebSocket-tvOS.a in Frameworks */,
+				413F4A921E9950FB006114D4 /* libRCTWebSocket.a in Frameworks */,
+				413F4A931E9950FB006114D4 /* libReact.a in Frameworks */,
+				413F4A941E9950FB006114D4 /* libReact.a in Frameworks */,
+				413F4A951E9950FB006114D4 /* libReactNativeShareExtension.a in Frameworks */,
+				413F4A961E9950FB006114D4 /* libyoga.a in Frameworks */,
+				413F4A971E9950FB006114D4 /* libyoga.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +510,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		413F4A4E1E994E6E006114D4 /* MyShareEx */ = {
+			isa = PBXGroup;
+			children = (
+				413F4A521E994E6E006114D4 /* MainInterface.storyboard */,
+				413F4A551E994E6E006114D4 /* Info.plist */,
+				413F4A761E994EA5006114D4 /* MyShareEx.m */,
+			);
+			path = MyShareEx;
+			sourceTree = "<group>";
+		};
+		413F4A791E994F22006114D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				413F4A7D1E994F22006114D4 /* libReactNativeShareExtension.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,6 +549,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				413F4A781E994F22006114D4 /* ReactNativeShareExtension.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -466,6 +580,7 @@
 				13B07FAE1A68108700A75B9A /* boiler */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* boilerTests */,
+				413F4A4E1E994E6E006114D4 /* MyShareEx */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 			);
 			indentWidth = 2;
@@ -479,6 +594,7 @@
 				00E356EE1AD99517003FC87E /* boilerTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* boiler-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* boiler-tvOSTests.xctest */,
+				413F4A4D1E994E6E006114D4 /* MyShareEx.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -512,10 +628,12 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				413F4A751E994E6E006114D4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				413F4A571E994E6E006114D4 /* PBXTargetDependency */,
 			);
 			name = boiler;
 			productName = "Hello World";
@@ -558,6 +676,23 @@
 			productReference = 2D02E4901E0B4A5D006451C7 /* boiler-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		413F4A4C1E994E6E006114D4 /* MyShareEx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 413F4A741E994E6E006114D4 /* Build configuration list for PBXNativeTarget "MyShareEx" */;
+			buildPhases = (
+				413F4A491E994E6E006114D4 /* Sources */,
+				413F4A4A1E994E6E006114D4 /* Frameworks */,
+				413F4A4B1E994E6E006114D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyShareEx;
+			productName = MyShareEx;
+			productReference = 413F4A4D1E994E6E006114D4 /* MyShareEx.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -579,6 +714,10 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+					413F4A4C1E994E6E006114D4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -638,6 +777,10 @@
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
+				{
+					ProductGroup = 413F4A791E994F22006114D4 /* Products */;
+					ProjectRef = 413F4A781E994F22006114D4 /* ReactNativeShareExtension.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -645,6 +788,7 @@
 				00E356ED1AD99517003FC87E /* boilerTests */,
 				2D02E47A1E0B4A5D006451C7 /* boiler-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* boiler-tvOSTests */,
+				413F4A4C1E994E6E006114D4 /* MyShareEx */,
 			);
 		};
 /* End PBXProject section */
@@ -797,6 +941,13 @@
 			remoteRef = 3DAD3EAE1DF850E9000B6D8A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		413F4A7D1E994F22006114D4 /* libReactNativeShareExtension.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReactNativeShareExtension.a;
+			remoteRef = 413F4A7C1E994F22006114D4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -856,6 +1007,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413F4A4B1E994E6E006114D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				413F4A541E994E6E006114D4 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -927,6 +1086,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		413F4A491E994E6E006114D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				413F4A771E994EA5006114D4 /* MyShareEx.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -940,6 +1107,11 @@
 			target = 2D02E47A1E0B4A5D006451C7 /* boiler-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
+		413F4A571E994E6E006114D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 413F4A4C1E994E6E006114D4 /* MyShareEx */;
+			targetProxy = 413F4A561E994E6E006114D4 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -950,6 +1122,14 @@
 			);
 			name = LaunchScreen.xib;
 			path = boiler;
+			sourceTree = "<group>";
+		};
+		413F4A521E994E6E006114D4 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				413F4A531E994E6E006114D4 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1121,6 +1301,56 @@
 			};
 			name = Release;
 		};
+		413F4A591E994E6E006114D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../node_modules/react-native-share-extension/ios/**";
+				INFOPLIST_FILE = MyShareEx/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.boiler.MyShareEx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		413F4A5A1E994E6E006114D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../node_modules/react-native-share-extension/ios/**";
+				INFOPLIST_FILE = MyShareEx/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.boiler.MyShareEx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		83CBBA201A601CBA00E9B192 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1235,6 +1465,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		413F4A741E994E6E006114D4 /* Build configuration list for PBXNativeTarget "MyShareEx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				413F4A591E994E6E006114D4 /* Debug */,
+				413F4A5A1E994E6E006114D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "boiler" */ = {
 			isa = XCConfigurationList;

@@ -1,11 +1,6 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
+import ShareExtension from 'react-native-share-extension'
 
 import React, { Component } from 'react';
-import Share from './share';
 
 import {
   AppRegistry,
@@ -22,11 +17,11 @@ export default class boiler extends Component {
           Welcome to React Native!
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit index.ios.js
+          To get started, edit index.android.js
         </Text>
         <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
+          Double tap R on your keyboard to reload,{'\n'}
+          Shake or press menu button for dev menu
         </Text>
       </View>
     );
@@ -52,6 +47,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('boiler', () => boiler);
-AppRegistry.registerComponent('MyShareEx', () => Share)
-
+const { type, value } = await ShareExtension.data()

@@ -5,6 +5,8 @@
  */
 
 import React, { Component } from 'react';
+import Share from './share';
+
 import {
   AppRegistry,
   StyleSheet,
@@ -51,3 +53,5 @@ const styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent('boiler', () => boiler);
+AppRegistry.registerComponent('MyShareEx', () => Share)
+
