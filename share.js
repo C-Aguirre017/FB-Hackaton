@@ -29,8 +29,20 @@ export default class Share extends Component {
     this.send = this.send.bind(this)
   }
 
-  send(file_path) {
-    RNFS.readFile(file_path, 'base64').then((content) => {
+  send(filePath) {
+    var serverURL = "https://www.google.cl";
+    var audio = {
+        uri: filePath,
+        type: 'audio/ogg',
+        name: 'audio.opus',
+    };
+    var body = new FormData();
+    body.append('audio', audio);
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', serverURL);
+    xhr.send(body);
+
+    RNFS.readFile(filePath, 'base64').then((content) => {
       this.setState({
         isLoading: false,
         result: 'hola'
