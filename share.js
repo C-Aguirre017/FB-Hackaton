@@ -31,33 +31,32 @@ export default class Share extends Component {
 
   send(filePath) {
     var serverURL = "http://ec2-54-207-100-233.sa-east-1.compute.amazonaws.com:3000/convert";
-    RNFS.readFile(filePath, 'base64').then((content) => {
-      const audio = {
-        uri: filePath,
-        type: 'audio/ogg',
-        name: 'audio.ogg'
-      }
-      var body = new FormData();
-      body.append('files[]', audio);
-      fetch(serverURL,
-      { 
-        method: 'POST',
-        headers: {
-          'Accept': 'application/json',
-          "Content-Type": "multipart/form-data"
-        },
-        body: body
-      })
-      .then((res) => console.dir(res))
-      .then((res) => res.json())
-      .then((res) => { console.log("response" + JSON.stringify(res)); })
-      .catch((e) => console.dir(e))
-      .done()
-      this.setState({
-        isLoading: false,
-        result: 'hola'
+    const audio = {
+      uri: filePath,
+      type: 'audio/ogg',
+      name: 'audio.ogg'
+    }
+    var body = new FormData();
+    body.append('files[]', audio);
+    fetch(serverURL,
+    { 
+      method: 'POST',
+      headers: {
+        'Accept': 'application/text',
+        "Content-Type": "multipart/form-data"
+      },
+      body: body
+    })
+    .then((res) => {
+      res.text().then((text) =>  {
+        this.setState({
+          isLoading: false,
+          result: text
+        })
       })
     })
+    .catch((e) => console.dir(e))
+    .done()
   }
 
   async componentDidMount() {
