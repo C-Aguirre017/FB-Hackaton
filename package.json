@@ -10,7 +10,7 @@
     "react": "16.0.0-alpha.6",
     "react-native": "0.43.2",
     "react-native-fs": "^2.1.0-rc.1",
-    "react-native-share-extension": "^1.1.1",
+    "react-native-share-extension": "git+https://github.com/isseu/react-native-share-extension.git",
     "react-native-spinkit": "^1.0.2"
   },
   "devDependencies": {
