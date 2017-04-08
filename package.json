@@ -7,6 +7,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "libopus.js": "0.0.1",
     "react": "16.0.0-alpha.6",
     "react-native": "0.43.2",
     "react-native-fs": "^2.1.0-rc.1",

@@ -30,25 +30,34 @@ export default class Share extends Component {
   }
 
   send(filePath) {
-    var serverURL = "https://www.google.cl";
-    var audio = {
+    var serverURL = "http://ec2-54-207-100-233.sa-east-1.compute.amazonaws.com:3000/convert";
+    RNFS.readFile(filePath, 'base64').then((content) => {
+      const audio = {
         uri: filePath,
         type: 'audio/ogg',
-        name: 'audio.opus',
-    };
-    var body = new FormData();
-    body.append('audio', audio);
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', serverURL);
-    xhr.send(body);
-
-    RNFS.readFile(filePath, 'base64').then((content) => {
+        name: 'audio.ogg'
+      }
+      var body = new FormData();
+      body.append('files[]', audio);
+      fetch(serverURL,
+      { 
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          "Content-Type": "multipart/form-data"
+        },
+        body: body
+      })
+      .then((res) => console.dir(res))
+      .then((res) => res.json())
+      .then((res) => { console.log("response" + JSON.stringify(res)); })
+      .catch((e) => console.dir(e))
+      .done()
       this.setState({
         isLoading: false,
         result: 'hola'
       })
     })
-    return "aaa";
   }
 
   async componentDidMount() {
@@ -64,12 +73,6 @@ export default class Share extends Component {
     ShareExtension.close()
   }
 
-  closing = () => {
-    this.setState({
-      isOpen: false
-    })
-  }
-
   render() {
     content = ''
     if(this.state.isLoading) {
@@ -80,7 +83,6 @@ export default class Share extends Component {
       content = <View>
         <Text style={{fontSize: 20, fontWeight: 'bold', color: '#77B3D4'}}>Texto</Text>
         <ScrollView>
-          <Text style={{fontSize: 20, color: '#333333', textAlign: 'justify'}}>{ this.state.value }</Text>
           <Text style={{fontSize: 20, color: '#333333', textAlign: 'justify'}}>{ this.state.result }</Text>
         </ScrollView>
       </View>
@@ -88,7 +90,7 @@ export default class Share extends Component {
     return (
       <Modal open={true} style={{flex: 1, alignItems: 'center'}} transparent={true} onRequestClose={() => {}}>
 	      <View>
-	        <View style={{ borderColor: 'green', borderWidth: 1, backgroundColor: 'white', margin: 10, borderRadius: 2, padding: 5, flexDirection: 'column'}}>
+	        <View style={{ borderColor: 'green', borderWidth: 0, backgroundColor: 'white', margin: 10, borderRadius: 2, padding: 5, flexDirection: 'column'}}>
 	          <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
 	            <Image
 	              source={require('./images/eye.png')}
