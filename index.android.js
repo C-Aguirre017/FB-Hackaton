@@ -41,8 +41,9 @@ export default class boiler extends Component {
             <Spinner isVisible={true} size={100} type={'Wave'} color={'#77B3D4'}/>
           </View>
           <View>
+            <Text style={{fontSize: 20, fontWeight: 'bold', color: '#000000'}}>Texto</Text>
             <ScrollView>
-              <Text style={{fontSize: 20, color: '#000000', textAlign: 'justify'}}>{ this.state.value }</Text>
+              <Text style={{fontSize: 20, color: '#333333', textAlign: 'justify'}}>{ this.state.value }</Text>
             </ScrollView>
           </View>
         </View>
