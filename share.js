@@ -13,7 +13,8 @@ import {
   ScrollView,
   Image,
   Modal,
-  BackAndroid
+  BackAndroid,
+  Picker
 } from 'react-native';
 
 export default class Share extends Component {
@@ -22,20 +23,25 @@ export default class Share extends Component {
     this.state = {
       isOpen: true,
       isLoading: true,
-      result: ''
+      result: '',
+      language: 'english',
+      filePath: '',
     }
     this.send = this.send.bind(this)
+    this.changeLanguage = this.changeLanguage.bind(this)
   }
 
-  send(filePath) {
+  send() {
+    this.setState({ isLoading: true })
     var serverURL = "http://ec2-54-207-100-233.sa-east-1.compute.amazonaws.com:3000/convert";
     const audio = {
-      uri: filePath,
+      uri: this.state.filePath,
       type: 'audio/ogg',
       name: 'audio.ogg'
     }
     var body = new FormData();
     body.append('files[]', audio);
+    body.append('language', this.state.language);
     fetch(serverURL,
     { 
       method: 'POST',
@@ -57,10 +63,14 @@ export default class Share extends Component {
     .done()
   }
 
+  changeLanguage(lang) {
+    this.setState({ language: lang }, () => this.send())
+  }
+
   async componentDidMount() {
     try {
       const { type, value } = await ShareExtension.data()
-      this.send(value)
+      this.setState({ filePath: value }, () => this.send() )
     } catch(e) {
       console.log('errrr', e)
     }
@@ -78,7 +88,12 @@ export default class Share extends Component {
       </View>
     } else {
       content = <View>
-        <Text style={{fontSize: 20, fontWeight: 'bold', color: '#77B3D4'}}>Texto</Text>
+          <Picker
+            selectedValue={this.state.language}
+            onValueChange={this.changeLanguage}>
+            <Picker.Item label="Español" value="spanish" />
+            <Picker.Item label="Ingles" value="english" />
+          </Picker>
         <ScrollView>
           <Text style={{fontSize: 20, color: '#333333', textAlign: 'justify'}}>{ this.state.result }</Text>
         </ScrollView>
