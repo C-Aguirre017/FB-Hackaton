@@ -7,7 +7,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "libopus.js": "0.0.1",
     "react": "16.0.0-alpha.6",
     "react-native": "0.43.2",
     "react-native-share-extension": "git+https://github.com/isseu/react-native-share-extension.git",
