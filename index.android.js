@@ -6,7 +6,6 @@
 
 import React, { Component } from 'react';
 import Share from './share';
-import Modal from 'react-native-modalbox'
 
 import {
   AppRegistry,
