@@ -31,12 +31,13 @@ export default class boiler extends Component {
           <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', flex: 0.5 }}>
             <Image
               source={require('./images/eye.png')}
-              style={{width: 50, height: 50}}
+              style={{width: 75, height: 75}}
             />
-            <Text style={{ marginLeft: 10, fontSize: 30, fontWeight: 'bold', color: '#77B3D4' }}>PAPIRO</Text>
+            <Text style={{ marginLeft: 10, fontSize: 35, fontWeight: 'bold', color: '#77B3D4' }}>PAPIRO</Text>
           </View>
           <View style={{ flex: 1}}>
-            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#000000' }}>Papiro fue creado en Facebook Hackathon Chile 2017</Text>
+            <Text style={{ fontSize: 20, textAlign: 'center', color: '#000000' }}>Papiro fue creado en Facebook Hackathon Chile 2017</Text>
+            <Text style={{ fontSize: 15, textAlign: 'center', color: '#aaaaaa' }}>https://github.com/C-Aguirre017/FB-Hackaton</Text>
           </View>
         </View>
       </View>

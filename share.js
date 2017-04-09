@@ -39,7 +39,7 @@ export default class Share extends Component {
 
   send() {
     this.setState({ isLoading: true })
-    var serverURL = "http://ec2-54-207-100-233.sa-east-1.compute.amazonaws.com:3000/convert";
+    var serverURL = "http://ec2-54-207-100-233.sa-east-1.compute.amazonaws.com:3000/convert/" + this.state.language;
     const audio = {
       uri: this.state.filePath,
       type: 'audio/ogg',
@@ -47,7 +47,6 @@ export default class Share extends Component {
     }
     var body = new FormData();
     body.append('files[]', audio);
-    body.append('language', this.state.language);
     fetch(serverURL,
     { 
       method: 'POST',
