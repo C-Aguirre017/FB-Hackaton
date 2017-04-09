@@ -7,6 +7,7 @@ import React, { Component } from 'react'
 import ShareExtension from 'react-native-share-extension'
 import Spinner from 'react-native-spinkit'
 import I18n from 'react-native-i18n'
+import Languages from './languages.json'
 
 import {
   Text,
@@ -40,6 +41,7 @@ export default class Share extends Component {
   send() {
     this.setState({ isLoading: true })
     var serverURL = "http://ec2-54-207-100-233.sa-east-1.compute.amazonaws.com:3000/convert/" + this.state.language;
+    console.dir(serverURL)
     const audio = {
       uri: this.state.filePath,
       type: 'audio/ogg',
@@ -86,6 +88,10 @@ export default class Share extends Component {
   }
 
   render() {
+    var picker_items = []
+    for(var k in Languages) {
+      picker_items.push(<Picker.Item label={Languages[k]} value={k} />)
+    }
     content = ''
     if(this.state.isLoading) {
       content = <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
@@ -97,8 +103,7 @@ export default class Share extends Component {
             selectedValue={this.state.language}
             onValueChange={this.changeLanguage}
             style={{ marginTop: 10, marginBottom: 10 }}>
-            <Picker.Item label="Español" value="es-US" />
-            <Picker.Item label="Ingles" value="english" />
+            {picker_items}
           </Picker>
         <ScrollView>
           <Text style={{fontSize: 20, color: '#333333', textAlign: 'justify'}}>{ this.capitalizeFirstLetter(this.state.result) }</Text>

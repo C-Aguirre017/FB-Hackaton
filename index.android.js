@@ -37,7 +37,7 @@ export default class boiler extends Component {
           </View>
           <View style={{ flex: 1}}>
             <Text style={{ fontSize: 20, textAlign: 'center', color: '#000000' }}>Papiro fue creado en Facebook Hackathon Chile 2017</Text>
-            <Text style={{ fontSize: 15, textAlign: 'center', color: '#aaaaaa' }}>https://github.com/C-Aguirre017/FB-Hackaton</Text>
+            <Text style={{ fontSize: 15, textAlign: 'center', color: '#aaaaaa', marginTop: 15 }}>https://github.com/C-Aguirre017/FB-Hackaton</Text>
           </View>
         </View>
       </View>
