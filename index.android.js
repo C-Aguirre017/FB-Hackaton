@@ -26,20 +26,17 @@ export default class boiler extends Component {
   }
   render() {
     return (
-      <View style={{flex: 1}}>
-        <View style={{ backgroundColor: 'white', flexDirection: 'column'}}>
-          <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
+      <View style={{ flex: 1 }}>
+        <View style={{ backgroundColor: 'white', flexDirection: 'column', flex: 1, padding: 20 }}>
+          <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', flex: 0.5 }}>
             <Image
               source={require('./images/eye.png')}
               style={{width: 50, height: 50}}
             />
-            <Text style={{marginLeft: 10, fontSize: 30, fontWeight: 'bold', color: '#77B3D4'}}>PAPIRO</Text>
+            <Text style={{ marginLeft: 10, fontSize: 30, fontWeight: 'bold', color: '#77B3D4' }}>PAPIRO</Text>
           </View>
-          <View>
-            <Text style={{fontSize: 20, fontWeight: 'bold', color: '#000000'}}>Texto</Text>
-            <ScrollView>
-              <Text style={{fontSize: 20, color: '#333333', textAlign: 'justify'}}></Text>
-            </ScrollView>
+          <View style={{ flex: 1}}>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#000000' }}>Papiro fue creado en Facebook Hackathon Chile 2017</Text>
           </View>
         </View>
       </View>

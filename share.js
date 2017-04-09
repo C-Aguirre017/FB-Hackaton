@@ -5,7 +5,8 @@
 
 import React, { Component } from 'react'
 import ShareExtension from 'react-native-share-extension'
-import Spinner from 'react-native-spinkit';
+import Spinner from 'react-native-spinkit'
+import I18n from 'react-native-i18n'
 
 import {
   Text,
@@ -24,11 +25,16 @@ export default class Share extends Component {
       isOpen: true,
       isLoading: true,
       result: '',
-      language: 'english',
+      language: I18n.currentLocale(),
       filePath: '',
     }
     this.send = this.send.bind(this)
     this.changeLanguage = this.changeLanguage.bind(this)
+    this.capitalizeFirstLetter = this.capitalizeFirstLetter.bind(this)
+  }
+
+  capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
   }
 
   send() {
@@ -90,20 +96,21 @@ export default class Share extends Component {
       content = <View>
           <Picker
             selectedValue={this.state.language}
-            onValueChange={this.changeLanguage}>
-            <Picker.Item label="Español" value="spanish" />
+            onValueChange={this.changeLanguage}
+            style={{ marginTop: 10, marginBottom: 10 }}>
+            <Picker.Item label="Español" value="es-US" />
             <Picker.Item label="Ingles" value="english" />
           </Picker>
         <ScrollView>
-          <Text style={{fontSize: 20, color: '#333333', textAlign: 'justify'}}>{ this.state.result }</Text>
+          <Text style={{fontSize: 20, color: '#333333', textAlign: 'justify'}}>{ this.capitalizeFirstLetter(this.state.result) }</Text>
         </ScrollView>
       </View>
     }
     return (
       <Modal open={true} style={{flex: 1, alignItems: 'center'}} transparent={true} onRequestClose={() => { BackAndroid.exitApp(); }}>
 	      <View>
-	        <View style={{ borderColor: 'green', borderWidth: 0, backgroundColor: 'white', margin: 10, borderRadius: 2, padding: 5, flexDirection: 'column'}}>
-	          <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
+	        <View style={{ borderWidth: 0, backgroundColor: 'white', margin: 15, borderRadius: 2, padding: 15, flexDirection: 'column' }}>
+	          <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
 	            <Image
 	              source={require('./images/eye.png')}
 	              style={{width: 50, height: 50}}
